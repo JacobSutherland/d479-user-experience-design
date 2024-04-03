@@ -1,0 +1,501 @@
+/*---- Global Reset ----*/
+
+* {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul, li {
+    text-decoration: none;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a:visited {
+    color: initial;
+}
+/*-------- Home Page --------*/
+/*---- Header / Footer ----*/
+header, footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: 1rem;
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    align-self: center;
+}
+
+.logo {
+    margin-left: 1rem;
+    height: 50px;
+}
+
+nav {
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header li, footer li {
+    padding: 45px;
+}
+
+header input, footer input {
+    border-radius: 25px;
+    margin-left: 10px;
+    padding: 5px;
+}  
+
+header button, footer button {
+    padding: 5px;
+}
+
+.splash-image-container {
+    margin-top: 2rem;
+    height: 50vh;
+    background-image: url(images/taniti-splash.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.splash-image-container h1 {
+    color: white;
+}
+
+/*---- Island Overview Section ----*/
+#about-island {
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    padding: 1rem;
+}
+
+.summary {
+    padding: 1rem;
+    width: 30%;
+}
+
+.experiences {
+    padding: 1rem;
+    width: 70%;
+}
+
+.experiences-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.experiences-card {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    
+}
+
+.experiences a {
+    display: inline-block;
+    height: 250px;
+    width: 45%;
+    margin: .5rem;
+}
+
+.experiences a:hover {
+    opacity: 0.7;
+}
+
+.card-1 {
+    background-image: url(images/food-home.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-2 {
+    background-image: url(images/lodging-home.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-3 {
+    background-image: url(images/entertainment-home.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-4 {
+    background-image: url(images/sightseeing-beach-home.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+/*---- Gallery Section ----*/
+
+#gallery {
+    padding: 2rem;
+}
+
+.gallery-card {
+    min-height: 400px;
+    max-height: 400px;
+    min-width: 30%;
+    max-width: 30%;
+    display: inline-block;
+    margin: 25px;
+    
+}
+
+.gallery-1 {
+    background-image: url(images/gallery-1.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery-2 {
+    background-image: url(images/gallery-2.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery-3 {
+    background-image: url(images/gallery-3.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+/*--------- Sightseeing Page ---------*/
+/*---- Summary Section ----*/
+.section-summary {
+    padding: 1rem;
+}
+
+.sight-entertainment-options {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sight-entertainment-card {
+    width: 45%;
+    height: 500px;
+    padding: 1rem;
+}
+
+.a-image-1 {
+    background-image: url(images/taniti-town.avif);
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 45%;
+    max-width: 45%;
+}
+
+.a-image-2 {
+    background-image: url(images/sightseeing-beach.avif);
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 45%;
+    max-width: 45%;
+}
+.a-image-3 {
+    background-image: url(images/taniti-tour.avif);
+    background-position: top;
+    background-size: cover;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 45%;
+    max-width: 45%;  
+}
+.a-image-4{
+    background-image: url(images/tanit-hiking.avif);
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 45%;
+    max-width: 45%; 
+}
+.a-image-5 {
+    background-image: url(images/taniti-volcano.avif);
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 45%;
+    max-width: 45%;   
+}
+.a-image-6 {
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 45%;
+    max-width: 45%;  
+}
+
+.call-to-action {
+    margin: 6rem;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.call-to-action button {
+    padding: 5px;
+    width: 100%;
+}
+
+/*-------- Entertainment Page ---------*/
+.b-image-1 {
+    background-image: url(images/taniti-museum.avif);
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 45%;
+    max-width: 45%;
+}
+
+.b-image-2 {
+    background-image: url(images/taniti-fishing.avif);
+    background-position: bottom;
+    background-size: cover;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 45%;
+    max-width: 45%;
+}
+.b-image-3 {
+    background-image: url(images/taniti-snorkeling.avif);
+    background-position: top;
+    background-size: cover;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 45%;
+    max-width: 45%;  
+}
+.b-image-4{
+    background-image: url(images/taniti-zipline.avif);
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 45%;
+    max-width: 45%; 
+}
+.b-image-5 {
+    background-image: url(images/taniti-nightlife.avif);
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 45%;
+    max-width: 45%;   
+}
+.b-image-6 {
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 45%;
+    max-width: 45%;  
+}
+
+/*-------- Local Cuisine --------*/
+/*---- sea-food ----*/
+.options h1 {
+    text-align: center;
+
+}
+.category-a-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.option-card {
+    margin: 2rem;
+    width: 25%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.food-options img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*---- american-food ----*/
+.category-b-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.option-card {
+    margin: 2rem;
+    width: 25%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.food-options img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*---- asian-food ----*/
+.category-c-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.option-card {
+    margin: 2rem;
+    width: 25%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.food-options img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*---- Tranportation Page ----*/
+.arriving h1 {
+    padding: 1rem;
+}
+
+.arriving p {
+    margin-left: 1rem;
+}
+
+.arriving img {
+    width: 100%;
+    height: 500px;
+}
+
+.local-transportation h1 {
+    margin-left: 1rem;
+
+}
+
+.local-transportation p {
+    margin-left: 1rem;
+}
+
+/*----- contact page -----*/
+#user-form-container {
+    margin-top:35px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80vh;
+}
+
+#user-form-container form {
+    width: 20%;
+    margin-left: 100px;
+    margin-top: 25px;
+
+}
+
+form input {
+    width:100%;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+select {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+
+.consult-info {
+    width: 35%;
+    
+}
+
+.consult-info img {
+    max-width: 100%;
+    width: 100%;
+}
+
+#user-form-container form button {
+    width: 100%;
+
+}
+
+
+#about {
+    margin-top: 25px;
+    padding: 25px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.description {
+    width: 30%;
+}
+
+form button {
+    margin-top: 5px;
+    width: 100%;
+    padding: 5px;
+    
+}
+
+.faq {
+    margin: 5rem;
+}
