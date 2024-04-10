@@ -432,6 +432,11 @@ header button, footer button {
     margin-left: 1rem;
 }
 
+.option-card p {
+    text-wrap: wrap;
+    margin-left: 0;
+}
+
 /*----- contact page -----*/
 #user-form-container {
     margin-top:35px;
